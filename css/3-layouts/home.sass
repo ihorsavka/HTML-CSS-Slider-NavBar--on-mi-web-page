@@ -1,0 +1,49 @@
+.bullets
+	padding: 100px 0
+
+.page-content
+	position: reletive
+	z-index: 0
+	+transition()
+
+.togl
+	text-decoration: none
+	+position(fixed)
+	z-index: 1
+	font-size: 30px
+	color: black
+	+transition()
+	color: #ccc
+
+.sidebar
+	+position(fixed, 0 0 0 -190px)
+	width: 120px
+	padding: 30px
+	background: #333
+	z-index: 0
+	+transition()
+
+
+li
+	color: rgba(255,255,255,0.8)
+	font-family: helvetica
+	font-size: 16px
+	margin-botom: 16px
+	-webkit-font-smoothing: antialiased
+	cursor: pointer
+
+	&:hover
+		color: rgba(255,255,255,1)
+
+#rrr
+	display: none
+
+
+	&:checked + .page-wrap
+
+		.sidebar
+			left: 0px
+		.togl
+			left: 200px
+		.page-content
+			padding-left: 150px
